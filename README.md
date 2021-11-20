@@ -11,7 +11,7 @@
   + Baekjoon OJ
   + (Meeting 날짜 미정)
 # 형식 :receipt:
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/CodingPythonMan/Jogging-Algorithm-Study/UML/Instance.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/CodingPythonMan/Jogging-Algorithm-Study/main/UML/Instance.puml)
 # 목차 :safety_pin:
   1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 첫 번째 문제  
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges) 
