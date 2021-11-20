@@ -1,16 +1,23 @@
 # Jogging-Algorithm-Study :sparkles:
 코딩테스트 알고리즘 스터디입니다.
-# Study Member :cyclone:
+# 스터디 멤버 :cyclone:
   + 김주영 (팀장)
   + 조민의
   + 김주현
   + 현용주
-# Information :tornado:
+# Information:tornado:
   + Java
   + Programmers
   + Baekjoon OJ
   + (Meeting 날짜 미정)
-# 목차 &#128204;
+# 형식
+@startuml
+class Main{
+ +solution
+ +main
+}
+
+# 목차 :safety_pin:
   1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 첫 번째 문제  
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges) 
   2. 2주차 : Programmers 코딩테스트 고득점 Kit level 2  
