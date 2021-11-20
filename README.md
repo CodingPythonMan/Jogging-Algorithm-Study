@@ -11,11 +11,7 @@
   + Baekjoon OJ
   + (Meeting 날짜 미정)
 # 형식
-@startuml
-class Main{
- +solution
- +main
-}
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/CodingPythonMan/Jogging-Algorithm-Study/UML/Instance.puml)
 
 # 목차 :safety_pin:
   1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 첫 번째 문제  
