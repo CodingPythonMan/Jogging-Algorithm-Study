@@ -13,7 +13,7 @@
 # 형식 :receipt:
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/CodingPythonMan/Jogging-Algorithm-Study/main/UML/form.puml)
 # 목차 :safety_pin:
-  1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 Level 1 문제
+  1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 Level 1 문제 (BFS만 Level2 추가)
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges) 
   2. 2주차 : Programmers 코딩테스트 고득점 Kit 주제별 Level 2 첫번째 문제
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges) 
