@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main_Greedy_001 {
 	// n은 전체 학생 수, lost 도난당한 학생, reserve는 여벌 체육복 가진 학생
@@ -7,6 +8,8 @@ public class Main_Greedy_001 {
 		// 1<= reserve.length <=n, 중복 x
 		// 체육수업 듣는 최대값
 		int result = 0;
+		Arrays.sort(lost);
+		Arrays.sort(reserve);
 		Student[] students = new Student[n];
 		for(int i=0; i<students.length; i++) {
 			students[i] = new Student();
@@ -18,34 +21,39 @@ public class Main_Greedy_001 {
 			for(int j=0; j<reserve.length; j++) {
 				if(lost[i] == reserve[j]) {
 					reserve[j] = -1;
+					// 여분 사람은 잃더라도 하나 체육복이 있다.
+					students[lost[i]-1].existCloth = true;
 				}
 			}
 		}
 		
 		// 2. reserve 앞 번호부터 체크하여 하나를 준다.
 		for(int i=0; i<reserve.length; i++) {
+			//System.out.println("왜안해저요" + (reserve[i]-1));
 			if(reserve[i] == -1) {
 				continue;
 			}
-			// 앞 번호
+			// 0번째 조사x
 			if(reserve[i]-1 > 0) {
+				// 앞 번호
 				if(students[reserve[i]-2].existCloth == false ) {
 					students[reserve[i]-2].existCloth = true;
 					continue;
 				}
 			}
 			
-			// 뒷 번호
-			if(reserve[i]+1 < reserve.length+1) {
+			// 마지막값 넘어간 값 조사x
+			if(reserve[i] < n) {
+				// 뒷 번호
 				if(students[reserve[i]].existCloth == false ) {
 					students[reserve[i]].existCloth = true;
-					continue;
 				}
 			}
 		}
 		
 		// 3. 학생이 체육복을 가지고 있는가 체크
 		for(int i=0; i<n; i++) {
+			//System.out.println(students[i].existCloth);
 			if(students[i].existCloth == true) {
 				result++;
 			}
@@ -62,9 +70,9 @@ public class Main_Greedy_001 {
 	}
 	
 	public static void main(String[] args) {
-		int n = 3;
-		int[] lost = {3};
-		int[] reserve = {1};
+		int n = 6;
+		int[] lost = {6,2,4};
+		int[] reserve = {1,5,3};
 
 		System.out.println(solution(n, lost, reserve));
 	}
