@@ -13,10 +13,10 @@
 # 형식 :receipt:
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/CodingPythonMan/Jogging-Algorithm-Study/main/UML/form.puml)
 # 목차 :safety_pin:
-  1. 1주차 : Programmers 코딩테스트 고득점 Kit 주제별 Level 1 문제 (BFS만 Level2 추가)
+  1. 1주차 : Programmers 코딩테스트 고득점 Kit 5문제 (해쉬, 탐욕법, 정렬, 완전탐색, DFS/BFS 1문제)
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges)<br> 
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  2. 2주차 : Programmers 코딩테스트 고득점 Kit 5문제 (스택/큐 : 기능개발, 힙 : 더 맵게, 정렬 : 가장 큰 수, 탐욕법 : 조이스틱, DFS : 네트워크)
+  2. 2주차 : Programmers 코딩테스트 고득점 Kit 5문제 (스택/큐 : 기능개발, 힙 : 더 맵게, 정렬 : 가장 큰 수, 탐욕법 : 조이스틱, DFS/BFS : 네트워크)
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges)<br>
     Meeting : ( - )
   3. 3주차 : -
