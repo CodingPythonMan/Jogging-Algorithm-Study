@@ -1,0 +1,26 @@
+import java.util.HashMap;
+
+class Solution {
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+        
+        HashMap<String, Integer> run = new HashMap<String, Integer>();
+        
+        // 참가자에게 1씩 값을 주고(중복을 위해 getOrDefault를 사용)        
+        for(String man : participant){
+            run.put(man, run.getOrDefault(man, 0) + 1 );
+        }
+        // 완주자에게 1씩 값을 뺀다
+        for(String man : completion){
+            run.put(man, run.get(man) - 1 );
+        }
+        // 키 값을 반환해서 값이 0이 아닌 사람이 미 완주자
+        for(String key : run.keySet()){
+            if(run.get(key) != 0){
+                answer = key;
+                break;
+            }            
+        }
+        return answer;
+    }
+}
