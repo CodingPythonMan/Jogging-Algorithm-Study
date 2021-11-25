@@ -16,7 +16,7 @@
   1. 1주차 : Programmers 코딩테스트 고득점 Kit 5문제 (해쉬, 탐욕법, 정렬, 완전탐색, DFS/BFS 1문제)<br>
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges)<br> 
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  2. 2주차 : Programmers 코딩테스트 고득점 Kit 5문제 (스택/큐 : 기능개발, 힙 : 더 맵게, 정렬 : 가장 큰 수, 탐욕법 : 조이스틱, DFS/BFS : 네트워크)
+  2. 2주차 : Programmers 코딩테스트 고득점 Kit 5문제 (스택/큐 : 기능개발, 힙 : 더 맵게, 정렬 : 가장 큰 수, 탐욕법 : 조이스틱, DFS/BFS : 네트워크)<br>
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges)<br>
     Meeting : ( - )
   3. 3주차 : -
