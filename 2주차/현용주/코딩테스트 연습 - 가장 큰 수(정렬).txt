@@ -1,0 +1,39 @@
+import java.util.*;
+
+class Solution {
+    public String solution(int[] numbers) {
+        String answer = "";
+        // 문자열을 저장할 배열 생성
+        String[] str = new String[numbers.length];
+        
+        // 숫자를 문자로 저장
+        for(int i = 0; i < numbers.length; i++){
+            str[i] = String.valueOf(numbers[i]);                
+        }
+        
+        // 정렬 및 비교
+	Arrays.sort(str, new Comparator<String>() {
+
+		// s1과 s2를 비교
+		@Override
+		public int compare(String s1, String s2) {
+
+                // 내림차순 정렬
+		return ((s2 + s1).compareTo(s1 + s2));
+		}
+	});
+
+	// 0만 여러개 있는 배열의 경우 하나의 0만 리턴
+	if(str[0].equals("0")) {
+		return "0";
+	}
+		
+	// 정렬된 문자 하나로 합치기
+	for (String s : str) {
+		answer += s;
+	}
+       
+	return answer;
+        
+	}
+}
