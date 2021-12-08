@@ -1,0 +1,57 @@
+class Solution {
+    public int[] solution(int[] answers) {
+        int[] answer = {};
+        
+        // 학생들이 찍는 번호
+        int[] student1 = {1, 2, 3, 4, 5};
+        int[] student2 = {2, 1, 2, 3, 2, 4, 2, 5};
+        int[] student3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+        
+        // 정답 맞춘 수
+        int[] answerStudent = new int[3];
+        
+        // 정답을 얼만큼 맞췄는지 계산
+        for(int i = 0; i < answers.length; i++){
+            // 각 배열 길이만큼 정답을 확인
+            if(answers[i] == student1[i % student1.length]){
+                answerStudent[0]++;
+            }
+            if(answers[i] == student2[i % student2.length]){
+                answerStudent[1]++;
+            }
+            if(answers[i] == student3[i % student3.length]){
+                answerStudent[2]++;
+            }
+        }
+        
+        // 가장 많이 맞춘 점수
+        int max = 0;
+        for(int i = 0; i < 3; i++){
+            if(answerStudent[i] > max){
+                max = answerStudent[i];
+            }
+        }
+        
+        // 동점자 구하기
+        int maxCount = 0;
+        for(int i = 0; i < 3; i++){
+            if(answerStudent[i] == max){
+                maxCount++;
+            }
+        }
+
+	// 동점자 수만큼 배열 생성
+        answer = new int[maxCount];
+        int idx = 0;
+        for(int i = 0; i < 3; i++){
+	    // 동점자가 있을 경우
+            if(answerStudent[i] == max){
+ 		// 배열의 수에 1씩 넣어서 표시 (2명이 동점이면 answer[0] = 1, answer[1] = 2)
+                answer[idx++] = i + 1;
+            }
+        }
+        
+        return answer;
+    }
+    
+}

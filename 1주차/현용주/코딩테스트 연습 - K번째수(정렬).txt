@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] array, int[][] commands) {
+        // commands의 길이만큼 배열 생성
+        int[] answer = new int[commands.length];
+        
+        for(int i = 0; i < commands.length; i++){
+            // copyOfRange를 사용해서 array의 commands[0]값부터 commands[1]값까지 구함
+            int[] temp = Arrays.copyOfRange(array, commands[i][0]-1, commands[i][1]);
+            // 배열 정렬
+            Arrays.sort(temp);
+            // commands[2]번째 값을 추출
+            answer[i] = temp[commands[i][2]-1];
+        }
+        
+        return answer;
+    }
+}
