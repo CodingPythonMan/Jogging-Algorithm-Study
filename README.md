@@ -19,11 +19,13 @@
   2. 2주차 : Programmers 코딩테스트 고득점 Kit 5문제 (스택/큐, 힙, 정렬, 탐욕법, DFS/BFS 1문제)<br>
     📖 [Programmers 코딩테스트 고득점 Kit](https://programmers.co.kr/learn/challenges)<br>
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  3. 3주차 : BackJoon BFS/DFS, 그리디 각각 4문제 (BFS/DFS : 1260, 2606, 4963, 2667 그리디 : 2839, 5585, 10610, 1541)<br>
+  3. 3주차 : BackJoon BFS/DFS 4문제 (BFS/DFS : 1260, 2606, 4963, 2667)<br>
     📖[BackJoon BFS/DFS](https://www.acmicpc.net/problemset?sort=ac_desc&algo=126)<br>
+    Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
+  4. 4주차 : BackJoon BFS/DFS 골드 1문제, 그리디 4문제 (BFS/DFS : 2206, 그리디 : 2839, 5585, 10610, 1541)<br>
+    📖[BackJoon 골드4 BFS/DFS 2206](https://www.acmicpc.net/problem/2206)<br>
     📖[BackJoon 그리디](https://www.acmicpc.net/problemset?sort=ac_desc&algo=33)<br>
     Meeting : -
-  4. 4주차 : -
   5. 5주차 : -
   6. 6주차 : -
   7. 7주차 : -

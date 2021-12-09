@@ -27,6 +27,7 @@ public class Main_2606 {
 		}
 		
 		bfs(start);
+		
 		sc.close();
 	}
 	
