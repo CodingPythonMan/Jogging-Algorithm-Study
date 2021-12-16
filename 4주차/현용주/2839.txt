@@ -1,0 +1,32 @@
+public class test01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// n킬로그램을 받는다.
+		int n = sc.nextInt();
+
+		// 결과를 초기화 한다.
+		int result = 0;
+		
+		// true가 나올떄 까지 반복한다.
+		while(true) {
+			// n을 5로 나눠서 0이면 결과를 출력한다.
+			if(n % 5 == 0) {
+				result += n / 5;
+				System.out.println(result);
+				break;
+			} else {
+				// n을 5로 나눈 값이 0이 아니면 n에 -3을 하고 봉지수를 늘린다.
+				n -= 3;
+				result++;
+			}
+			
+			// n이 -가 되면 -1을 출력한다.
+			if(n < 0) {
+				System.out.println(-1);
+				break;
+			}
+		}
+	}
+}

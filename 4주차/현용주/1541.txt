@@ -1,0 +1,34 @@
+public class test01 {
+
+	public static void main(String[] args) {
+		// 값을 입력 받는다.
+		Scanner sc = new Scanner(System.in);
+
+		// 입력 받은 값을 저장한다.
+		String str = sc.nextLine();
+		
+		// 저장 받은 값을 -기준으로 배열에 나눠서 저장한다.
+		String[] minusArr = str.split("\\-");
+		
+		// 결과값 초기화
+		int result = 0;
+		
+		// -기준으로 나눈 배열 수만큼 반목문을 돌린다.		
+		for (int i = 0; i < minusArr.length; i++) {
+			// 이번엔 + 기준으로 나눠서 저장한다.
+			String[] plusArr = minusArr[i].split("\\+");
+			
+			// +기준으로 나눈 배열 수만큼 반복문을 돌린다.
+			for (int j = 0; j < plusArr.length; j++) {
+				// 첫번째 값은 +로 저장하고
+				if (i == 0) {
+					result += Integer.parseInt(plusArr[j]);
+				} // 첫번째 이외는 다 -로 저장한다. 
+				else {
+					result -= Integer.parseInt(plusArr[j]);
+				}
+			}
+		}
+		System.out.println(result);
+	}
+}
