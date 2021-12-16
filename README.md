@@ -25,8 +25,10 @@
   4. 4주차 : BackJoon BFS/DFS 골드 1문제, 그리디 4문제 (BFS/DFS : 2206, 그리디 : 2839, 5585, 10610, 1541)<br>
     📖[BackJoon 골드4 BFS/DFS 2206](https://www.acmicpc.net/problem/2206)<br>
     📖[BackJoon 그리디](https://www.acmicpc.net/problemset?sort=ac_desc&algo=33)<br>
+    Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
+  5. 5주차 : BackJoon III단계~VII단계 각각 2문제 (III : 2439, 10871, IV : 10951, 1110, V : 1546, 8958, VI : 15596, 1065, VII : 11720, 2941)
+    📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>
     Meeting : -
-  5. 5주차 : -
   6. 6주차 : -
   7. 7주차 : -
   8. 8주차 : -
