@@ -1,0 +1,49 @@
+public class test01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+		int result = 1000;
+		int count = 0;
+		
+		result = result - n;
+		
+		while(result > 0) {
+			if(result >= 500) {
+				result = result - 500;
+				count++;
+			} else if(result < 500 && result >= 100) {
+				for(int i = 0; i < (result / 100); i++) {
+					result = result - 100;
+					count++;
+				}
+			} else if(result < 100 && result >= 50) {
+				for(int i = 0; i < (result / 100); i++) {
+					result = result - 50;
+					count++;
+				}
+			} else if(result < 50 && result >= 10) {
+				for(int i = 0; i < (result / 10); i++) {
+					result = result - 10;
+					count++;
+				}
+			} else if(result < 10 && result >= 5) {
+				for(int i = 0; i < (result / 5); i++) {
+					result = result - 5;
+					count++;
+				}
+			} else if(result < 5 && result >= 1) {
+				for(int i = 0; i < (result / 1); i++) {
+					result = result - 1;
+					count++;
+				}
+			}
+			
+			if(result == 0) {
+				System.out.println(count);
+				break;
+			}
+		}
+	}
+}
