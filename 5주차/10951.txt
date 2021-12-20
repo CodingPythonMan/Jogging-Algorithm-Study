@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int A;
+		int B;
+		
+		while(true) {
+			
+			A = sc.nextInt();
+			B = sc.nextInt();
+			
+			if(0 < A && B < 10) {
+				System.out.println(A + B);
+			}
+			if(!sc.hasNext()) {
+				break;
+			}
+		}
+	}
+	
+}
