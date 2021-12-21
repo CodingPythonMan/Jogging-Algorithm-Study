@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.nextLine();
+		String[] result = null;
+		int count = 0;
+
+		while (str.length() > 0) {
+			if (str.contains("c=")) {
+				str = str.replace("c=", "");
+				count++;
+			} else if (str.contains("c-")) {
+				str = str.replace("c-", "");
+				count++;
+			} else if (str.contains("dz=")) {
+				str = str.replace("dz=", "");
+				count++;
+			} else if (str.contains("d-")) {
+				str = str.replace("dz-", "");
+				count++;
+			} else if (str.contains("lj")) {
+				str = str.replace("lj", "");
+				count++;
+			} else if (str.contains("nj")) {
+				str = str.replace("nj", "");
+				count++;
+			} else if (str.contains("s=")) {
+				str = str.replace("s=", "");
+				count++;
+			} else if (str.contains("z=")) {
+				str = str.replace("z=", "");
+				count++;
+			} else {
+				for (int i = 0; i < str.length(); i++) {
+					count++;
+				}
+				break;
+			}
+		}
+
+		System.out.println(str);
+
+	}
+
+}

@@ -1,0 +1,69 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String N;
+		char[] num1 = new char[2];
+		char[] num2 = new char[2];
+		int result;
+		int sum;
+		int count = 0;
+		
+		N = sc.next();
+		
+		int firstnum = Integer.parseInt(N);
+		
+		System.out.println("입력받은 값 = " + firstnum);
+		
+		// 0 ~ 99 사이 값이면 동작 
+		while (Integer.parseInt(N) >= 0 && Integer.parseInt(N) <= 99) {
+			// 입력받은수가 1이면 0N으로 만들기
+			if(Integer.parseInt(N) < 10) {
+				N = String.format("%02d", Integer.parseInt(N));
+			}
+			
+			// 2자리 숫자를 각각 저장
+			for(int i = 0; i < 2; i++) {
+				num1[i] = N.charAt(i);
+			}
+			
+			// 각각 저장한 값을 합친다.
+			sum = Character.getNumericValue(num1[0]) + Character.getNumericValue(num1[1]);
+			
+			System.out.println("첫번째 자릿수의 합 = " + sum);
+			
+			// 다시 N값에 문자로 저장한다.
+			N = Integer.toString(sum);
+			
+			// 합친 값이 2자리면 각각 저장한다.
+			if(sum >= 10) {
+				for(int i = 0; i < 2; i++) {
+					num2[i] = N.charAt(i);
+				}
+				// 각각 뒷자리 수를 합친다.
+				result = num1[1] + num2[1];
+				System.out.println("10보다 큰 result = " +result);
+				count++;
+			} // 아니면 1가지 수를 저장한다.  
+			else {
+				num2[0] = N.charAt(0);
+				System.out.println("N"+N);
+				result = Character.getNumericValue(num1[0]) + Character.getNumericValue(num2[0]);
+				System.out.println("10보다 작은 result = " +result);
+				System.out.println("num1[0]"+num1[0]);
+				System.out.println("num1[1]"+num1[1]);
+				System.out.println("num2[0]"+num2[0]);
+				count++;
+			}
+			
+			if(firstnum == result) {
+				System.out.println(count);
+				break; 
+			}
+		}
+	}
+
+}

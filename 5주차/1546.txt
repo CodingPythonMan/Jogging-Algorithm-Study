@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int N;
+		N = sc.nextInt();
+		double[] M = new double[N];
+		double max;
+		double sum = 0;
+		double[] result = new double[N];
+		
+		for(int i = 0; i < M.length; i++) {
+			M[i] = sc.nextDouble();
+		}
+		
+		Arrays.sort(M);
+		max = M[N-1];
+		
+		for(int i = 0; i < M.length; i++) {
+			result[i] = M[i] / max * 100;
+			
+			sum += result[i];
+		}
+		System.out.println(sum/N);
+	}
+
+}
