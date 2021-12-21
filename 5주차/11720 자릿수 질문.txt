@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int number = sc.nextInt();
+		int sum = 0;
+		
+		if(N >= 1 && N <= 100) {
+			while(number > 0) {
+				number = number / 10;
+				sum += number % 10;
+			}
+		}
+		
+		System.out.println(sum);
+	}
+}
