@@ -29,9 +29,9 @@
   5. 5주차 : BackJoon III~VII단계 각각 2문제 (III : 2439, 10871, IV : 10951, 1110, V : 1546, 8958, VI : 15596, 1065, VII : 11720, 2941)<br>
     📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  6. 6주차 : 기본(BackJoon III단계 3문제, IIII~VII단계 각각 1문제), 도전(VII~X단계 각각 1문제)
+  6. 6주차 : 기본(BackJoon III단계 3문제, IV~VII단계 각각 1문제) , 도전(VII~X단계 각각 1문제)<br>
 	기본 : (별 찍기 : 2441, 2442, 2444, IV : 10952, V : 3052, VI : 4673, VII : 1157)<br>
-    도전 : (VIII : 2292, IX : 1929, X : 2447)
+    도전 : (VIII : 2292, IX : 1929, X : 2447)<br>
 	📖[BackJoon 별 찍기](https://www.acmicpc.net/problemset?search=%EB%B3%84+%EC%B0%8D%EA%B8%B0)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : -
