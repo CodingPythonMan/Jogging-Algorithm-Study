@@ -1,0 +1,115 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// 다 대문자로 입력받음
+		String str = sc.nextLine().toUpperCase();
+		int[] count = new int[26];
+		int max;
+		char result;
+		
+		for(int i = 0; i < str.length(); i++) {
+			switch(str.charAt(i)) {
+				case 'A' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'B' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'C' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'D' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'E' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'F' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'G' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'H' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'I' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'J' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'K' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'L' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'M' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'N' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'O' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'P' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'Q' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'R' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'S' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'T' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'U' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'V' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'W' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'X' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'Y' :
+					count[str.charAt(i) - 65]++;
+					break;
+				case 'Z' :
+					count[str.charAt(i) - 65]++;
+					break;
+			}
+		}
+		
+		max = count[0];
+		result = 'A';
+		
+		for(int i = 1; i <= count.length - 1; i++) {
+			if(max < count[i]) {
+				max = count[i];
+				
+				result = (char) (i + 65);
+			} else if(max == count[i]) {
+				result = '?';
+			}
+			
+		}
+		
+		System.out.println(result);
+		
+	}
+
+}
