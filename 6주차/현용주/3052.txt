@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int[] N = new int[10];
+		// 같은 값은 따로 저장을 안함, 다른 값이 들어올때만 저장
+		HashSet<Integer> value = new HashSet<Integer>();
+		
+		for(int i = 0; i < 10; i++) {
+			N[i] = sc.nextInt();
+			value.add(N[i] % 42); 
+		}
+		
+		System.out.println(value.size());
+		
+	}
+
+}
