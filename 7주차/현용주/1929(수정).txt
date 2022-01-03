@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int N = sc.nextInt();
+		int M = sc.nextInt();
+		
+		int prime[] = new int[M + 1];
+		
+		for(int i = 0; i <= M; i++) {
+			prime[i] = 0;
+		}
+		
+		prime[1] = 1;
+		
+		for(int i = 2; i <= M; i++) {
+			for(int j = 2; i * j <= M; j++) {
+				prime[i * j] = 1;
+			}
+		}
+		
+		for(int i = N; i <= M; i++) {
+			if(prime[i] != 1) {
+				System.out.println(i);
+			}
+		}
+				
+	}
+
+}
