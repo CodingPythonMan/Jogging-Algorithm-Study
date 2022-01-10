@@ -34,13 +34,18 @@
 	📖[BackJoon 별 찍기](https://www.acmicpc.net/problemset?search=%EB%B3%84+%EC%B0%8D%EA%B8%B0)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  7. 7주차 : 기본(BackJoon III단계 3문제, VIII 단계 1문제) , 도전(IX ~ XI단계 각각 1문제)<br>
+  7. 7주차 : 기본(BackJoon III단계 3문제, VIII 단계 1문제) , 도전(IX 단계 1문제)<br>
 	기본 : (별 찍기 : 2440, 2443, 2445, VIII : 2292)<br>
-	도전 : (IX : 1929, X : 2447, XI : 1018)<br>
+	도전 : (IX : 1929)<br>
 	📖[BackJoon 별 찍기](https://www.acmicpc.net/problemset?search=%EB%B3%84+%EC%B0%8D%EA%B8%B0)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
+    Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
+  8. 8주차 : 기본(BackJoon V단계 3문제, X ~ XI단계 각각 1문제) , 도전(XII ~ XIV단계 각각 1문제)<br>
+	기본 : (1차원 배열 : 10818, 2562, 2577, X : 2447, XI : 1018)<br>
+	도전 : (XII : 2750, XIII : 현재 단계 관리자가 수정 중이므로 잠시 건너 뛰겠습니다. XIV : 15649)<br>
+	📖[BackJoon 1차원 배열](https://www.acmicpc.net/step/6)<br>
+	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : -
-  8. 8주차 : -
   9. 9주차 : -
   10. 10주차 : -
   11. 11주차 : -
