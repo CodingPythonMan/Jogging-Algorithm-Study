@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int N = input.nextInt();
+		int cnt=1;
+		int range=2;
+		
+		if(N==1) {
+			System.out.println(1);
+		}
+		
+		while(range <= N) {	//범위가 N보다 커지기 직전까지 반복
+			range+=(6*cnt);	//다음 범위의 최솟값으로 초기화
+			cnt++;
+		}
+		System.out.println(cnt);
+		
+
+	}
+
+}
