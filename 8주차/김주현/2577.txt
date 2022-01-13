@@ -1,0 +1,28 @@
+// A*B*C 의 결과를 문자열로 만들고 하나씩 잘라서 반복문에 넣는다.
+// 구분하는 반복문을 만들어 if문으로 각 숫자가 몇개 쓰였는지 알아내자
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int result;
+		
+		int A = in.nextInt();
+		int B = in.nextInt();
+		int C = in.nextInt();
+		
+		result = A*B*C;
+		
+		String str=Integer.toString(result);	// Integer.toString() 정수를 문자열로 변화
+		for (int i = 0; i < 10; i++) {
+			int count = 0;						// 반복해서 count 0으로 초기화
+			for (int j = 0; j < str.length(); j++) {
+				if((str.charAt(j) - '0') == i){	// 한글자씩 정수형으로 바꿔주는 메서드 .charAt() 사용시 -'0' 하지않으면 아스키코드가 출력된다.
+					count++;
+				}
+			}
+			System.out.println(count);
+		}
+	}
+}
