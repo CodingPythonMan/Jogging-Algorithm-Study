@@ -40,13 +40,16 @@
 	📖[BackJoon 별 찍기](https://www.acmicpc.net/problemset?search=%EB%B3%84+%EC%B0%8D%EA%B8%B0)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : 김주영, 조민의, 김주현, 현용주 출석완료 :heavy_check_mark:
-  8. 8주차 : 기본(BackJoon V단계 3문제, X ~ XI단계 각각 1문제) , 도전(XII ~ XIV단계 각각 1문제)<br>
+  8. 8주차 : 기본(BackJoon V단계 3문제, X ~ XI단계 각각 1문제)<br>
 	기본 : (1차원 배열 : 10818, 2562, 2577, X : 2447, XI : 1018)<br>
-	도전 : (XII : 2750, XIII : 현재 단계 관리자가 수정 중이므로 잠시 건너 뛰겠습니다. XIV : 15649)<br>
 	📖[BackJoon 1차원 배열](https://www.acmicpc.net/step/6)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
+    Meeting : 취업 지원으로 한 주 쉬었습니다.
+  9. 9주차 : 기본(BackJoon 종합 5문제, XII ~ XIV단계 각각 1문제) , 도전(XII ~ XIV단계 각각 1문제)<br>
+	기본 : (종합 : 4344, 1316, 10872, 2750, XII : 2750, XIV : 15649)<br>
+	도전 : (XV : 9184, XVI : 11047)<br>
+	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : -
-  9. 9주차 : -
   10. 10주차 : -
   11. 11주차 : -
   12. 12주차 : -
