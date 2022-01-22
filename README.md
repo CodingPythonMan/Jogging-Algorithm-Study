@@ -45,12 +45,16 @@
 	📖[BackJoon 1차원 배열](https://www.acmicpc.net/step/6)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>	
     Meeting : 취업 지원으로 한 주 쉬었습니다.
-  9. 9주차 : 기본(BackJoon 종합 5문제, XII ~ XIV단계 각각 1문제) , 도전(XII ~ XIV단계 각각 1문제)<br>
+  9. 9주차 : 기본(BackJoon 종합 5문제, XII ~ XIV단계 각각 1문제) , 도전(XV ~ XVI단계 각각 1문제)<br>
 	기본 : (종합 : 4344, 1316, 10872, 1193, 2775, XII : 2750, XIV : 15649)<br>
 	도전 : (XV : 9184, XVI : 11047)<br>
-	📖[BackJoon 9주차 문제집](https://www.acmicpc.net/workbook/view/9994)<br>	
-    Meeting : -
-  10. 10주차 : -
+	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>		
+    Meeting : X
+  10. 10주차 : 기본(BackJoon 종합 1문제) , 도전(XVII ~ XVIII 단계 각각 1문제)<br>
+	기본 : (종합 : 10870)<br>
+	도전 : (XVII : 1037, XVIII : 10828)<br>
+	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>		
+    Meeting : X
   11. 11주차 : -
   12. 12주차 : -
   13. 13주차 : -
