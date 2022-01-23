@@ -51,7 +51,7 @@
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>		
     Meeting : X
   10. 10주차 : 기본(BackJoon 종합 1문제) , 도전(XVII ~ XVIII 단계 각각 1문제)<br>
-	기본 : (종합 : 10870)<br>
+	기본 : (종합 : 10870, 10773, 18258, 2164)<br>
 	도전 : (XVII : 1037, XVIII : 10828)<br>
 	📖[BackJoon 단계별 풀어보기](https://www.acmicpc.net/step)<br>		
     Meeting : X
