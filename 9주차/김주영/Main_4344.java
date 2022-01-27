@@ -17,6 +17,7 @@ public class Main_4344 {
 		double[] answer = new double[n];
 		int num = 0;
 		
+		// 1. 1줄마다의 평균 구하기
 		for(int i=0; i<n; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			num = Integer.parseInt(st.nextToken());
@@ -24,17 +25,19 @@ public class Main_4344 {
 			
 			for(int j=0; j<num; j++) {
 				students[i][j] = Integer.parseInt(st.nextToken());
-				average[i] += (students[i][j] / num);
+				average[i] += students[i][j];
 			}
+			average[i] /= num;
 		}
 		
+		// 2. 개개인이 평균을 넘는지 확인하기
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<students[i].length; j++) {
-				if(average[i] <= students[i][j]) {
+				if(average[i] < students[i][j]) {
 					answer[i] ++; 
 				}
 			}
-			answer[i] /= num;
+			answer[i] /= students[i].length;
 		}
 		
 		for(int i=0; i<n; i++) {
