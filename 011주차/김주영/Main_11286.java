@@ -12,41 +12,38 @@ public class Main_11286 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int n = Integer.parseInt(br.readLine());
-		PriorityQueue<Number> pq = new PriorityQueue<Number>();
+		PriorityQueue<Integer> pq = new PriorityQueue<Integer>((o1, o2) ->{
+			int a = Math.abs(o1);
+			int b = Math.abs(o2);
+
+			if(a > b) {
+				return 1;
+			}else if(a == b){
+				if(o1 > o2) {
+					return 1;
+				}else {
+					return -1;
+				}
+			}else {
+				return -1;
+			}
+		});
 		
 		for(int i=0; i<n; i++) {
-			int input = Integer.parseInt(br.readLine());
-			Number number;
+			int num = Integer.parseInt(br.readLine());
 			
-			if(input != 0) {
-				if(input > 0) {
-					number = new Number(false, input);
-				}else {
-					number = new Number(true, input);
-				}
-				pq.add(number);
+			if(num != 0) {
+				pq.add(num);
 			}else {
-				// number가 0일 때
-				number = pq.poll();
-				if(number.minus) {
-					bw.write(String.valueOf(number.value));
+				if(pq.isEmpty()) {
+					bw.write(String.valueOf(0)+"\n");
 				}else {
-					bw.write(String.valueOf(-number.value));
+					bw.write(String.valueOf(pq.poll()+"\n"));
 				}
 			}
 		}
-		
+
 		bw.flush();
 		bw.close();
-	}
-	
-	public static class Number{
-		boolean minus;
-		int value;
-		
-		public Number(boolean minus, int value) {
-			this.minus = minus;
-			this.value = value;
-		}
 	}
 }
