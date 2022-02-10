@@ -61,5 +61,9 @@
     Meeting : X
   12. 12주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
 	부족했던 코딩 작성해서 제출해주시길 바랍니다!
-  13. 13주차 : -
+  13. 13주차 : 종합 10문제<br>
+	종합 : [1935](https://www.acmicpc.net/problem/1935), [2075](https://www.acmicpc.net/problem/2075), [3040](https://www.acmicpc.net/problem/3040), [10448](https://www.acmicpc.net/problem/10448),
+ [3085](https://www.acmicpc.net/problem/3085), [1931](https://www.acmicpc.net/problem/1931), [1449](https://www.acmicpc.net/problem/1449), [11724](https://www.acmicpc.net/problem/11724),
+ [2178](https://www.acmicpc.net/problem/2178), [1987](https://www.acmicpc.net/problem/1987)<br>
+    Meeting : X
   14. 14주차 : -
