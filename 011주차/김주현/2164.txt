@@ -1,0 +1,37 @@
+package baekjoon;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Deque;
+import java.util.LinkedList;
+
+
+public class B2164 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		Deque<Integer> q = new LinkedList<>();
+	
+		int N = Integer.parseInt(br.readLine());
+		
+		for(int i = 1 ;i <= N ;i++) {	// 카드숫자 추가
+			// offer는 큐의 맨 뒤에 요소를 추가한다.
+			q.offer(i);
+		}
+	
+		while(N-->1) {
+			q.poll();					// 첫번째 수 버리기
+			Integer item =  q.pop();	// 두번째 수 꺼내기
+			
+			// offer는 큐의 맨 뒤에 요소를 추가한다.
+			q.offer(item); // 두번째 수 뒤로 보내기
+			
+		}
+		
+		System.out.println(q.pop());
+	}
+
+}
