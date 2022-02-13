@@ -1,0 +1,49 @@
+package baekjoon;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class B11286 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Queue<Integer> q = new LinkedList<>();	// 1~N까지 큐에 입력되어있다고 가정
+		
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		
+		int N = Integer.parseInt(st.nextToken());	// N개의 수
+		int K = Integer.parseInt(st.nextToken());	// K번째 수
+		
+		for(int i = 1; i <= N; i++) {
+			q.add(i);
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append('<');
+		
+		/*
+		 * 마지막 부분의 출력은 > 괄호 전에 공백이 없기 때문에 
+		 * 일괄적으로 출력하기 위해 마지막 원소만 남겨질 때까지만 
+		 * 반복하고 마지막 원소는 그대로 출력한다.
+		 */
+		
+		while(q.size() > 1) {
+			// K-1번 앞에 있는 원소를 뒤로 보낸다.
+			for(int i = 0; i < K-1;i++) {
+				
+				q.offer(q.poll());	// 뒤로 보낸 원소를 다시 넣는다.
+			}
+			sb.append(q.poll()).append(", ");
+		}
+		
+		// 마지막 원소 출력한 뒤 > 도 붙여준다.
+		sb.append(q.poll()).append(">");
+		System.out.println(sb);
+
+	}
+
+}
