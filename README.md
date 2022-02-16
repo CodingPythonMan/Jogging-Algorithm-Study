@@ -66,4 +66,7 @@
  [3085](https://www.acmicpc.net/problem/3085), [1931](https://www.acmicpc.net/problem/1931), [1449](https://www.acmicpc.net/problem/1449), [11724](https://www.acmicpc.net/problem/11724),
  [2178](https://www.acmicpc.net/problem/2178), [1987](https://www.acmicpc.net/problem/1987)<br>
     Meeting : X
-  14. 14주차 : -
+  14. 14주차 : 종합 6문제<br>
+	종합 : [1743](https://www.acmicpc.net/problem/1743), [7562](https://www.acmicpc.net/problem/7562), [9663](https://www.acmicpc.net/problem/9663), [2805](https://www.acmicpc.net/problem/2805), 
+ [10816](https://www.acmicpc.net/problem/10816), [1463](https://www.acmicpc.net/problem/1463)<br>
+    Meeting : X
