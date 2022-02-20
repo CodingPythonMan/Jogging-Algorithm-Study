@@ -14,6 +14,7 @@ public class Main_1987 {
 	static char[][] map;
 	static int[] dx = {0,0,1,-1};
 	static int[] dy = {1,-1,0,0};
+	static boolean[] visited;
 	
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,6 +24,7 @@ public class Main_1987 {
 		column = Integer.parseInt(st.nextToken());
 		
 		map = new char[row][column];
+		visited = new boolean[26];
 		
 		for(int i=0; i<row; i++) {
 			String str = br.readLine();
@@ -36,9 +38,9 @@ public class Main_1987 {
 	
 	public static void bfs() {
 		Queue<Position> queue = new LinkedList<Position>();
-		Position pos = new Position(0,0,1, new char[row * column + 1]);
-		pos.alphabets[pos.distance] = map[0][0];
+		Position pos = new Position(0,0,1);
 		queue.add(pos);
+		visited[map[0][0] - 'A'] = true;
 		int max = 0;
 		
 		while(!queue.isEmpty()) {
@@ -53,9 +55,9 @@ public class Main_1987 {
 				nextY = pos.y + dy[i];
 				
 				if(nextX >= 0 && nextY >= 0 && nextX < column && nextY < row) {
-					if(!checkAlphabets(map[nextY][nextX], pos.alphabets)) {
-						pos = new Position(nextX, nextY, (pos.distance+1), pos.alphabets);
-						pos.alphabets[pos.distance] = map[nextY][nextX];
+					if(visited[map[nextY][nextX] - 'A'] == false) {
+						pos = new Position(nextX, nextY, (pos.distance+1));
+						visited[map[nextY][nextX] - 'A'] = true;
 						queue.add(pos);
 					}
 				}
@@ -69,13 +71,11 @@ public class Main_1987 {
 		int x;
 		int y;
 		int distance;
-		char[] alphabets;
 		
-		Position(int x, int y, int distance, char[] alphabets){
+		Position(int x, int y, int distance){
 			this.x = x;
 			this.y = y;
 			this.distance = distance;
-			this.alphabets = alphabets;
 		}
 	}
 }
