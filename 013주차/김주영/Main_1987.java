@@ -1,81 +1,57 @@
 package week13;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_1987 {
-	static int row;
-	static int column;
-	static char[][] map;
-	static int[] dx = {0,0,1,-1};
-	static int[] dy = {1,-1,0,0};
-	static boolean[] visited;
-	
-	public static void main(String[] args) throws Exception{
+	static int R, C;
+	static int[][] map;
+	static boolean[] visited = new boolean[26];
+	static int[] dx = { -1, 1, 0, 0 };
+	static int[] dy = { 0, 0, -1, 1 };
+	static int ans = 0;
+
+	public static void dfs(int x, int y, int count) {
+		if (visited[map[x][y]]) { // 0,0에 저장된 알파벳이 이미 한번 방문한 알파벳이라면,
+			ans = Math.max(ans, count); // 정답을 갱신해준다.
+			return; // 조건에 만족하므로 리턴.
+		} else {
+			visited[map[x][y]] = true;
+			for (int i = 0; i < 4; i++) {
+				int cx = x + dx[i];
+				int cy = y + dy[i];
+
+				if (cx >= 0 && cy >= 0 && cx < R && cy < C) {
+					dfs(cx, cy, count + 1);
+				}
+
+			}
+
+			visited[map[x][y]] = false;
+
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		
-		row = Integer.parseInt(st.nextToken());
-		column = Integer.parseInt(st.nextToken());
-		
-		map = new char[row][column];
-		visited = new boolean[26];
-		
-		for(int i=0; i<row; i++) {
+
+		R = Integer.parseInt(st.nextToken());
+		C = Integer.parseInt(st.nextToken());
+		map = new int[R][C];
+		for (int i = 0; i < R; i++) {
 			String str = br.readLine();
-			for(int j=0; j<column; j++) {
-				map[i][j] = str.charAt(j);
+			for (int j = 0; j < C; j++) {
+				map[i][j] = str.charAt(j) - 'A';
 			}
 		}
-		
-		bfs();
-	}
-	
-	public static void bfs() {
-		Queue<Position> queue = new LinkedList<Position>();
-		Position pos = new Position(0,0,1);
-		queue.add(pos);
-		visited[map[0][0] - 'A'] = true;
-		int max = 0;
-		
-		while(!queue.isEmpty()) {
-			int nextX;
-			int nextY;
-			pos = queue.poll();
-			
-			max = Math.max(pos.distance, max);
-			
-			for(int i=0; i<4; i++) {
-				nextX = pos.x + dx[i];
-				nextY = pos.y + dy[i];
-				
-				if(nextX >= 0 && nextY >= 0 && nextX < column && nextY < row) {
-					if(visited[map[nextY][nextX] - 'A'] == false) {
-						pos = new Position(nextX, nextY, (pos.distance+1));
-						visited[map[nextY][nextX] - 'A'] = true;
-						queue.add(pos);
-					}
-				}
-			}
-		}
-		
-		System.out.println(max);
-	}
-	
-	public static class Position{
-		int x;
-		int y;
-		int distance;
-		
-		Position(int x, int y, int distance){
-			this.x = x;
-			this.y = y;
-			this.distance = distance;
-		}
+
+		dfs(0, 0, 0);
+		// (0,0)부터 시작하며, 현재 이동한 위치는 0회
+
+		System.out.println(ans);
 	}
 }
