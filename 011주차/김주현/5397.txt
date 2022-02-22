@@ -1,0 +1,51 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class B5397 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder(); // sb 문자열 생성
+		int n = Integer.parseInt(br.readLine());// int 형변환
+		
+		for(int i = 0; i < n; i++) {
+			String s = br.readLine();
+			Deque<Character> preFix = new ArrayDeque<>(); // 앞쪽Deque
+			Deque<Character> postFix = new ArrayDeque<>();// 뒤쪽Deque
+			
+			for(int j =0, len=s.length();j < len;j++) {
+				char c = s.charAt(j);
+				switch(c) {
+				case '<':
+					if(!preFix.isEmpty())// not null
+						postFix.addFirst(preFix.pollLast());// 앞 Deque의 뒷요소 삭제하면서 뒷 Deque 앞에 삽입
+					break;
+				case '>':
+					if(!postFix.isEmpty())//not null
+						preFix.addLast(postFix.pollFirst());
+					break;
+				case '-':// 앞 Deque가 not null일때 뒷요소 삭제
+					if(!preFix.isEmpty())
+						preFix.pollLast();
+					break;
+					default:
+						preFix.add(c);
+				}
+		
+			}
+			
+			while(!preFix.isEmpty())// null이 아닐때
+				sb.append(preFix.pollFirst());
+			while(!postFix.isEmpty())// null이 아닐때
+				sb.append(postFix.pollFirst());
+			sb.append("\n");// 두 개의 deque를 더한 후 개행
+			
+		}
+		System.out.println(sb);
+		
+	}
+
+}
