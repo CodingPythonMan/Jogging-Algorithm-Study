@@ -30,10 +30,12 @@
  [10816](https://www.acmicpc.net/problem/10816), [1463](https://www.acmicpc.net/problem/1463)<br>
     Meeting : X
   6. 15주차 : 종합 4문제<br>
-	종합 : [11726](https://www.acmicpc.net/problem/11726), [9465](https://www.acmicpc.net/problem/9465), [2343](https://www.acmicpc.net/problem/2343), [1699](https://www.acmicpc.net/problem/1699)<br>
+	종합 : [1764](https://www.acmicpc.net/problem/1764), [1620](https://www.acmicpc.net/problem/1620), [1753](https://www.acmicpc.net/problem/1753), [1916](https://www.acmicpc.net/problem/1916)<br>
     Meeting : X
   7. 16주차 : 종합 4문제<br>
 	종합 : [11055](https://www.acmicpc.net/problem/11055), [2841](https://www.acmicpc.net/problem/2841), [4796](https://www.acmicpc.net/problem/4796), [15686](https://www.acmicpc.net/problem/15686)<br>
     Meeting : X
   8. 17주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
+	부족했던 코딩 작성해서 제출해주시길 바랍니다!
+  9. 18주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
 	부족했던 코딩 작성해서 제출해주시길 바랍니다!
