@@ -18,8 +18,8 @@
 	종합 : 11866, 9012, 2164, 11286, 1302, 7785, 5397<br>	
 	📖[BackJoon 11866번](https://boj.kr/11866)<br>		
     Meeting : X
-  3. 12주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
-	부족했던 코딩 작성해서 제출해주시길 바랍니다!
+  3. 12주차 : 종합 4문제<br>
+	종합 : [1012](https://www.acmicpc.net/problem/1012), <br>
   4. 13주차 : 종합 10문제<br>
 	종합 : [1935](https://www.acmicpc.net/problem/1935), [2075](https://www.acmicpc.net/problem/2075), [3040](https://www.acmicpc.net/problem/3040), [10448](https://www.acmicpc.net/problem/10448),
  [3085](https://www.acmicpc.net/problem/3085), [1931](https://www.acmicpc.net/problem/1931), [1449](https://www.acmicpc.net/problem/1449), [11724](https://www.acmicpc.net/problem/11724),
@@ -35,7 +35,5 @@
   7. 16주차 : 종합 4문제<br>
 	종합 : [11055](https://www.acmicpc.net/problem/11055), [2841](https://www.acmicpc.net/problem/2841), [4796](https://www.acmicpc.net/problem/4796), [15686](https://www.acmicpc.net/problem/15686)<br>
     Meeting : X
-  8. 17주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
-	부족했던 코딩 작성해서 제출해주시길 바랍니다!
-  9. 18주차 : 아직 문제 제출 안 해주신 분이 많아 이번주 휴식하되,<br>
-	부족했던 코딩 작성해서 제출해주시길 바랍니다!
+  8. 17주차 : 
+  9. 18주차 : 
