@@ -19,7 +19,7 @@
 	📖[BackJoon 11866번](https://boj.kr/11866)<br>		
     Meeting : X
   3. 12주차 : 종합 4문제<br>
-	종합 : [1012](https://www.acmicpc.net/problem/1012), <br>
+	종합 : [1012](https://www.acmicpc.net/problem/1012), [16916](https://www.acmicpc.net/problem/16916),<br>
   4. 13주차 : 종합 10문제<br>
 	종합 : [1935](https://www.acmicpc.net/problem/1935), [2075](https://www.acmicpc.net/problem/2075), [3040](https://www.acmicpc.net/problem/3040), [10448](https://www.acmicpc.net/problem/10448),
  [3085](https://www.acmicpc.net/problem/3085), [1931](https://www.acmicpc.net/problem/1931), [1449](https://www.acmicpc.net/problem/1449), [11724](https://www.acmicpc.net/problem/11724),
