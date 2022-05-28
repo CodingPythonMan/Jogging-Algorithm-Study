@@ -30,5 +30,6 @@
   7. 16주차 : 종합 4문제<br>
 	종합 : [11055](https://www.acmicpc.net/problem/11055), [2841](https://www.acmicpc.net/problem/2841), [4796](https://www.acmicpc.net/problem/4796), [15686](https://www.acmicpc.net/problem/15686)<br>
   8. 17주차 : 종합 <br>
-	종합 : [11055](https://www.acmicpc.net/problem/11055), [2841](https://www.acmicpc.net/problem/2841), [4796](https://www.acmicpc.net/problem/4796), [15686](https://www.acmicpc.net/problem/15686)<br>
+	종합 : [1010](https://www.acmicpc.net/problem/1010), [1715](https://www.acmicpc.net/problem/1715), [9663](https://www.acmicpc.net/problem/9663), [11399](https://www.acmicpc.net/problem/11399),
+ [18352](https://www.acmicpc.net/problem/18352), [디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627), [광고 삽입](https://programmers.co.kr/learn/courses/30/lessons/72414)<br>
   9. 18주차 : 
